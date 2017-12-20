@@ -4,7 +4,16 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
+/**
+ * @property integer id
+ * @property string name
+ * @property string email
+ * @property string password 
+ * @property \Carbon\Carbon deleted_at
+ ...
+ * @method static User create(array $args) 
+ ...
+ */
 class User extends Authenticatable
 {
     use Notifiable;
